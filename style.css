@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,9 +7,13 @@ body {
     color: #333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Maven Pro', sans-serif;
+}
+
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -18,22 +22,44 @@ header {
     color: #333;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    font-size: 2.5rem; /* Adjust as needed */
+    color: #4CAF50; /* A color that stands out, adjust as needed */
+}
+
+h1 span {
+    display: block;
+    font-size: 1.2rem; /* Smaller than the main title */
+    margin-top: 0.5rem;
+    color: #333;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 nav ul li {
     margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
 }
 
 nav ul li a {
@@ -91,7 +117,6 @@ footer {
     }
 }
 
-
 /* Featured Coffee Shops */
 .featured-shops {
     padding: 2rem 0;
@@ -113,8 +138,10 @@ footer {
 
 .featured-shops img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .featured-shops h3 {
@@ -129,8 +156,9 @@ footer {
 }
 
 /* Buttons */
-.button {
-    background-color: #4CAF50; /* Green color - change as needed */
+
+/* .button {
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -140,5 +168,22 @@ footer {
 }
 
 .button:hover {
-    background-color: #3e8e41; /* Darker shade of the button color */
+    background-color: #3e8e41;
+} */
+
+
+button, .button {
+    font-family: 'Maven Pro', sans-serif;
+    /* Other styling properties for your buttons */
+    background-color: #4CAF50; /* Example background color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #3e8e41; /* Darker shade for hover effect */
 }
