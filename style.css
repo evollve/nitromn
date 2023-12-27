@@ -173,3 +173,17 @@ button, .button {
 button:hover, .button:hover {
     background-color: #3e8e41;
 }
+
+.signup-form {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.signup-iframe {
+    width: 100%;
+    max-width: 800px; /* Adjust as necessary */
+    height: 1500px; /* Start with a large value and adjust as needed */
+    border: none;
+    margin: 1rem auto;
+    display: block;
+}
