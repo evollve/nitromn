@@ -22,7 +22,13 @@ header {
     color: #333;
     padding: 2rem 0; /* Increased padding for a taller header */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff; /* Ensuring the header is not transparent */
 }
+
+
 
 header .container {
     display: flex;
@@ -186,4 +192,40 @@ button:hover, .button:hover {
     border: none;
     margin: 1rem auto;
     display: block;
+}
+
+main > section:first-child {
+    margin-top: 2rem; /* Adjust this value as needed */
+}
+
+nav ul li a:hover, .button:hover {
+    color: #4CAF50; /* Change color on hover */
+    text-decoration: underline; /* Add an underline effect */
+}
+
+.featured-shops .shop:hover {
+    transform: scale(1.05); /* Slightly enlarge cards on hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Add shadow effect */
+}
+
+.featured-shops .shop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adaptive grid */
+    gap: 20px; /* Spacing between cards */
+}
+
+.featured-shops .shop {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
 }
