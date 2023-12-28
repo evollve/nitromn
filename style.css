@@ -141,11 +141,12 @@ nav ul li a {
 
 .featured-shops img {
     width: 100%;
-    height: auto; /* Adjusted for a better aspect ratio */
+    height: 200px; /* Adjusted for a better aspect ratio */
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 
 .featured-shops h3 {
     margin: 0.5rem;
