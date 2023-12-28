@@ -239,3 +239,27 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+/* Nitro Info Card Styles */
+.nitro-info .nitro-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 1rem; /* Add padding inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nitro-info h1, .nitro-info h2 {
+    color: #333; /* Standard text color for headings */
+}
+
+.nitro-info .nitro-card:first-child {
+    margin-top: 2rem; /* Adjust this value as needed */
+}
+
+.featured-shops h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
