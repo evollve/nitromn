@@ -44,3 +44,15 @@ document.addEventListener('DOMContentLoaded', function () {
         return modal;
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('show');
+    });
+});
+
+
+

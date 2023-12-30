@@ -20,35 +20,30 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #fff;
     color: #333;
-    padding: 2rem 0; /* Increased padding for a taller header */
+    padding: 2rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #fff; /* Ensuring the header is not transparent */
 }
-
-
 
 header .container {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Ensures vertical center alignment */
+    align-items: center;
     justify-content: space-between;
-    padding-left: 1rem; /* Added padding for spacing on the left */
-    padding-right: 1rem; /* Added padding for spacing on the right */
+    padding: 0 1rem;
 }
 
 h1 {
-    font-family: 'Maven Pro', sans-serif;
     margin: 0;
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem;
     color: #4CAF50;
 }
 
 h1 span {
     color: #333;
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem;
 }
 
 nav ul {
@@ -56,20 +51,20 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* Aligns items vertically in the center */
-    margin: 0; /* Reset margin to align with the h1 */
+    align-items: center;
+    margin: 0;
 }
 
 nav ul li {
-    margin-left: 1rem; /* Increased spacing between links */
+    margin-left: 1rem;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem; /* Increased font size */
-    padding: 0.5rem; /* Added padding for larger clickable area */
+    font-size: 1.2rem;
+    padding: 0.5rem;
 }
 
 .hero {
@@ -84,7 +79,6 @@ nav ul li a {
     position: relative;
     width: 100%;
     height: 80vh;
-    max-height: 800px;
 }
 
 .responsive-map iframe {
@@ -93,32 +87,6 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0; /* Reset padding for mobile */
-        padding-right: 0; /* Reset padding for mobile */
-    }
-
-    nav ul {
-        justify-content: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 0 10px; /* Adjusted spacing for mobile */
-    }
-
-    h1 {
-        font-size: 1.75rem; /* Slightly smaller font size for mobile */
-    }
-
-    h1 span {
-        font-size: 1.25rem; /* Slightly smaller font size for mobile */
-    }
 }
 
 .featured-shops {
@@ -141,21 +109,19 @@ nav ul li a {
 
 .featured-shops img {
     width: 100%;
-    height: 200px; /* Adjusted for a better aspect ratio */
+    height: 200px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-
-.featured-shops h3 {
+.featured-shops h3, .featured-shops p {
     margin: 0.5rem;
-    font-size: 1.2rem;
     color: #333;
 }
 
 .featured-shops p {
-    margin: 0 0.5rem 1rem;
+    margin-bottom: 1rem;
     color: #555;
 }
 
@@ -181,35 +147,26 @@ button:hover, .button:hover {
 
 .signup-iframe {
     width: 100%;
-    max-width: 800px; /* Adjust as necessary */
-    height: 1500px; /* Start with a large value and adjust as needed */
+    max-width: 800px;
+    height: 1500px;
     border: none;
-    margin: 1rem auto;
+    margin: auto;
     display: block;
 }
 
 main > section:first-child {
-    margin-top: 2rem; /* Adjust this value as needed */
+    margin-top: 2rem;
 }
 
 nav ul li a:hover, .button:hover {
-    color: #4CAF50; /* Change color on hover */
-    text-decoration: underline; /* Add an underline effect */
-}
-
-.featured-shops .shop:hover {
-    transform: scale(1.05); /* Slightly enlarge cards on hover */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2); /* Add shadow effect */
+    color: #4CAF50;
+    text-decoration: underline;
 }
 
 .featured-shops .shop-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adaptive grid */
-    gap: 20px; /* Spacing between cards */
-}
-
-.featured-shops .shop {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 footer {
@@ -217,19 +174,13 @@ footer {
     color: #333;
     padding: 1rem;
     font-size: 0.9rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
-.footer-content p, .footer-content div {
-
+.footer-content, .footer-content p, .footer-content div {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -241,38 +192,28 @@ footer {
     text-decoration: underline;
 }
 
-/* Nitro Info Card Styles */
 .nitro-info .nitro-card {
     background: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
-    padding: 1rem; /* Add padding inside the card */
+    padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
 }
 
-.nitro-info h1, .nitro-info h2 {
-    color: #333; /* Standard text color for headings */
-}
-
-.nitro-info .nitro-card:first-child {
-    margin-top: 2rem; /* Adjust this value as needed */
-}
-
-.featured-shops h1 {
+.nitro-info h1, .nitro-info h2, .featured-shops h1 {
     color: #333;
     margin-bottom: 1rem;
 }
 
-/* Card Style for Content */
 .shop-details, .location-hours, .menu-highlights, .customer-reviews {
     background: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     padding: 20px;
     margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .shop-details:hover, .location-hours:hover, .menu-highlights:hover, .customer-reviews:hover {
@@ -280,13 +221,11 @@ footer {
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* Interactivity & Animation */
 .interactive-feature h3 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Example of a simple fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -296,12 +235,11 @@ footer {
     animation: fadeIn 1s ease-out;
 }
 
-
-/* Photo Gallery Styles */
 .photo-gallery .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 2rem;
 }
 
 .photo-gallery .gallery-item {
@@ -314,20 +252,17 @@ footer {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
-    display: block;
 }
 
 .photo-gallery .gallery-item:hover img {
     transform: scale(1.1);
 }
 
-/* Responsive layout for smaller screens */
 @media (max-width: 600px) {
     .photo-gallery .gallery-item {
         width: calc(50% - 10px);
     }
 }
-
 
 .image-modal {
     position: fixed;
@@ -362,41 +297,30 @@ footer {
     cursor: pointer;
 }
 
-/* Adjusting Photo Gallery for 2x2 Grid of Square Images */
 .photo-gallery .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
 .photo-gallery .gallery-item {
     width: 100%;
-    cursor: pointer;
     overflow: hidden;
-    aspect-ratio: 1 / 1; /* Ensuring square aspect ratio */
+    aspect-ratio: 1 / 1;
 }
 
 .photo-gallery .gallery-item img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensuring the image covers the square area */
-    transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
-/* Hover Effect: Scale on Hover */
-.photo-gallery .gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-/* Responsive layout for smaller screens */
 @media (max-width: 600px) {
     .photo-gallery .gallery {
-        grid-template-columns: repeat(1, 1fr); /* Single column on smaller screens */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-
-/* Ensuring consistent card-style for the photo-gallery */
 .photo-gallery {
     background: #f9f9f9;
     border-radius: 10px;
@@ -405,25 +329,41 @@ footer {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.nitro-info h1, .nitro-info h2 {
-    color: #333; /* Standard text color for headings */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    header h1 span {
+        display: none;
+    }
 }
 
-/* General Style for All h1 Elements */
-h1 {
-    font-family: 'Maven Pro', sans-serif; /* Example font, change as needed */
-    color: #333; /* Example color, change as needed */
-    margin: 10px 0; /* Example margin, change as needed */
+h1:not(header h1) {
+    color: #333; /* Sets a standard color for h1 elements outside the header */
 }
 
-/* Specific Style for the Site Title h1 in the Header */
-header h1 {
-    font-size: 2rem; /* Adjust the size as it's originally in your CSS */
-    color: #4CAF50; /* Adjust the color as it's originally in your CSS */
-    /* Add any other specific styles for the site title h1 here */
-}
-
-.shop a{
-    text-decoration: none;
+.featured-shops a {
+    text-decoration: none; /* Removes underline from shop name links */
 }
