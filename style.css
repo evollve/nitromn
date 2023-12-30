@@ -216,7 +216,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.shop-details:hover, .location-hours:hover, .menu-highlights:hover, .customer-reviews:hover {
+.shop-details:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
@@ -366,4 +366,49 @@ h1:not(header h1) {
 
 .featured-shops a {
     text-decoration: none; /* Removes underline from shop name links */
+}
+
+.shop-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Ensures text inside the link inherits the default color */
+}
+
+.shop-link:hover {
+    text-decoration: none; /* Removes underline on hover */
+}
+
+.shop .button {
+    /* Style for your 'Read More' button */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px; /* Adds some space above the button */
+}
+
+.nitro-cold-brew-image {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for card effect */
+    margin: 20px auto; /* Adds margin around the card */
+    max-width: 100%; /* Maximum width of the card */
+    overflow: hidden; /* Hide overflow to maintain aspect ratio */
+    position: relative; /* For aspect ratio */
+    padding-top: 45%; /* Aspect ratio for 16:9 (56.25% = 9/16) */
+}
+
+.nitro-cold-brew-image img {
+    position: absolute; /* Absolute position within the container */
+    top: 60%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    width: 100%; /* Width of container */
+    height: auto; /* Auto height to maintain aspect ratio */
+    object-fit: cover; /* Crop to cover the container */
+    border-radius: 10px; /* Rounded corners */
 }
